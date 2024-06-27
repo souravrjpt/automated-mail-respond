@@ -49,7 +49,11 @@
           if (messages && messages.length > 0) {
               // Fetch the complete message details.
               const currentTime = Date.now();
-              const timeWindow = 2 * 60 * 1000; // logic for replying to recent messages within the last 5 minutes
+
+              //this can be change according to needs I have set this time to 2 min so that it can only send reply 
+              //to mails which have arrived 2 min before, If i do not set it to 2 min then it will automatically reply
+              //to all my unread mails.
+              const timeWindow = 2 * 60 * 1000; // logic for replying to recent messages within the last 2 minutes
               for (const message of messages) {
                   const email = await gmail.users.messages.get({
                       userId: "me",
@@ -123,7 +127,7 @@
           console.error("Error occurred:", error);
       }
   }
-  
+  //to create reply text generated from llama model (LLM)
   function createReplyRaw(from, to, subject, replyContent) {
       const emailContent = `From: ${to}\nTo: ${from}\nSubject: ${subject}\n\n${replyContent}`;
       const base64EncodedEmail = Buffer.from(emailContent)
@@ -132,7 +136,7 @@
           .replace(/\//g, "_");
       return base64EncodedEmail;
   }
-  
+  //funciton to create neccessary label to the mails
   async function createLabelIfNeeded(labelName) {
       const gmail = google.gmail({ version: "v1", auth: oAuth2Client });
       const res = await gmail.users.labels.list({ userId: "me" });
