@@ -1,0 +1,20 @@
+{
+  "name": "automatic_mail_responder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1",
+    "node": "^20.15.0",
+    "nodemon": "^3.1.4",
+    "punycode": "^2.3.1"
+  }
+}
