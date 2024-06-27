@@ -35,6 +35,12 @@ The `OAuth2` class from the `google.auth` module is used to authenticate the app
 
 For making api to request the model for response.
 
+### Workflow of the project
+The picture below provide the whole idea about how this project is working.
+
+![automatic_mail_replyjpg](https://github.com/souravrjpt/automated-mail-respond/assets/95532791/dbd15954-e699-4621-accb-ba357d46e15f)
+
+
 ## Getting Started
 
 To set up OAuth 2.0 authentication for your application and enable the Gmail API, follow these steps:
