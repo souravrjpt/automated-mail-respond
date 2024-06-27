@@ -95,3 +95,29 @@ npm install googleapis nodemon
 npm start
 ```
 
+### Now you need tom setup your LLM locally
+
+Simply download from https://llama.meta.com/llama-downloads/ 
+Then you need to interact with LLM using api. I made an api in flask (which you can grab from `llm.py` file.). And whenever you make any request to it, Llama model will return a response to it which you can easily use in you reply.
+
+Setup virtual environment for flask, first install it by `pip i virtualenv`
+
+```bash
+python -m venv env
+
+# activate the virtual environment
+env\Scripts\activate
+
+```
+
+After doing all this write these two belowm commands to run both server
+
+```bash
+#To run flask app 
+flask --app llm run
+
+#To run gmail api
+node index.js
+```
+Now try to mail to the gmail that you've registered and wait for your response
+
