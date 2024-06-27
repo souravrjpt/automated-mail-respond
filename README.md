@@ -2,7 +2,7 @@
 
 ## Description:
 
-**This is a repository for Auto_reply_gmail_api_app App Developed using Node.js and Google APIs. This app is able to respond to emails sent to your Gmail mailbox while you’re dealing with other things. The reply is generated using LLAMA model.**
+**This project leverages the Gmail API to automate email replies using a Node.js application and a Python Flask API for generating responses. The application checks for unread emails, generates appropriate replies, and sends them back to the sender while labeling the emails accordingly.**
 
 ## Features
 
