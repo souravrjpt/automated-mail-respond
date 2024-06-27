@@ -122,7 +122,7 @@ node index.js
 Now try to mail to the gmail that you've registered and wait for your response
 ( The response will take a little time as your model is running locally)
 
-##Ideas for improvement and code optimization
+## Ideas for improvement and code optimization
  - We can use redis or its tools for better queing and management of recent emails.
  - Can add more prompt in template for better output.
 
