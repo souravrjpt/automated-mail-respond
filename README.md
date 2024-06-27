@@ -33,7 +33,7 @@ The `OAuth2` class from the `google.auth` module is used to authenticate the app
 
 ### 3. Flask
 
-I
+For making api to request the model for response.
 
 ## Getting Started
 
