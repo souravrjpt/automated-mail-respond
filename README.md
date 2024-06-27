@@ -95,7 +95,7 @@ npm install googleapis nodemon
 npm start
 ```
 
-### Now you need tom setup your LLM locally
+### Now you need to setup your LLM locally
 
 Simply download from https://llama.meta.com/llama-downloads/ 
 Then you need to interact with LLM using api. I made an api in flask (which you can grab from `llm.py` file.). And whenever you make any request to it, Llama model will return a response to it which you can easily use in you reply.
