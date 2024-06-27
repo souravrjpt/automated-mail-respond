@@ -21,7 +21,8 @@ llm = LlamaCpp(
 template = """
 TASK:
 You're a mail responder in my behalf and your task is to analyze the mail and generate a polite and professional reply 
-to the mail. Also add their name in response after 'Hi'.
+to the mail. If you found any kind of query in my mail, ask gentely to know more about the concerning subject and reply.
+
 
 Query:{query}
 Answer:
@@ -32,8 +33,6 @@ Answer:
 prompt = PromptTemplate.from_template(template=template)
 
 llm_chain = LLMChain(prompt=prompt, llm=llm)
-
-print("Reply.....")
 
 @app.route('/ask', methods=['GET'])
 def ask():
