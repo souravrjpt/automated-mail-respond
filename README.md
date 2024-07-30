@@ -1,4 +1,4 @@
-# automated-mail-respond
+# automatic-mail-response
 
 ## Description:
 
